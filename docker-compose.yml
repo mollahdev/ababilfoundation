@@ -1,7 +1,9 @@
 version: '3.8'
 
 services:
-  web:
+  ababil_web:
+    image: bdcityapp/ababilfoundation:latest
+    platform: linux/amd64
     build:
       context: .
       dockerfile: Dockerfile
